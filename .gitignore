@@ -1,12 +1,4 @@
 /node_modules
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/libraries/electron_d_ts.xml
-/.idea/.gitignore
-/.idea/compiler.xml
-/.idea/jsLibraryMappings.xml
-/.idea/MinecraftLauncher.iml
-/.idea/modules.xml
-/.idea/vcs.xml
+/.idea
 /desktop.ini
-/dist/launcher.js
-/dist/launcher.js.map
+/dist
