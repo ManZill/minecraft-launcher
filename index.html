@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-            http-equiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-            http-equiv="content-security-policy"
-            content="default-src 'self'; script-src 'self'"
-    />
-    <title>Hello from Electron renderer!</title>
+    <meta charset="UTF-8">
+    <title>Minecraft Launcher</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proxima+Nova">
+    <style>
+        body {
+            font-family: Proxima Nova, sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Hello from Electron renderer!</h1>
-<p>👋</p>
+
+<form>
+    <!--
+for logo in auth
+<div class="imgcontainer">
+    <img src="img/logo.png" alt="logo" class="logo">
+</div>
+-->
+    <div class="container">
+        <label for="mail_input"></label>
+        <input type="text" placeholder="Enter Username" name="uname" required="required" id="mail_input">
+
+        <label for="password_input"></label>
+        <input type="password" placeholder="Enter Password" name="psw" required="required" id="password_input">
+
+        <button type="button" class="btn" id="submit_button">Login</button>
+        <label>
+            <input type="checkbox" name="remember"> Remember me
+        </label>
+    </div>
+</form>
+<script>
+    require("./dist/renderer/renderer.js")
+</script>
 </body>
+
 </html>
